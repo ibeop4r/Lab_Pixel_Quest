@@ -9,7 +9,7 @@ public class geocontroller : MonoBehaviour
     Rigidbody2D rb;
     public float speed = 10;
     int num = 1;
-    string nextlevel = "geo_quest_scene_2";
+    public string nextlevel = "geo_quest_scene_2";
     // Start is called before the first frame update
     void Start()
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HW2PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D _rigibody2d;
+    private Rigidbody2D _rigidbody2d;
 
     private float _xSpeed;
     private float _ySpeed;
@@ -15,7 +15,7 @@ public class HW2PlayerMovement : MonoBehaviour
 
        private void Start()
     {
-        _rigibody2d = GetComponent<Rigidbody2D>();
+        _rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -23,6 +23,6 @@ public class HW2PlayerMovement : MonoBehaviour
         _xSpeed = Input.GetAxis("Horizontal");
         _ySpeed = Input.GetAxis("vertical");
 
-        _rigidbody2D.velocity = new Vector2(_xSpeed, _ySpeed) * speed;
+        _rigidbody2d.velocity = new Vector2(_xSpeed, _ySpeed) * speed;
     }
 }
